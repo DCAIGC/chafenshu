@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PROVINCE_NAME}}2025年高考查分入口-查分数网</title>
+    <meta name="description" content="{{PROVINCE_NAME}}2025年高考成绩查询官方入口，查分时间{{QUERY_DATE}}，提供{{EXAM_BOARD}}官方查分链接。">
+    <meta name="keywords" content="{{PROVINCE_NAME}}高考查分,{{PROVINCE_NAME}}高考成绩查询,{{PROVINCE_NAME}}高考分数线,{{QUERY_DATE}}查分">
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 自定义CSS变量 -->
+    <style>
+        :root {
+            --edu-blue-900: #1e40af;
+            --edu-blue-500: #3b82f6;
+            --edu-blue-100: #dbeafe;
+            --gray-50: #f8fafc;
+            --red-500: #ef4444;
+            --green-500: #10b981;
+            --amber-500: #f59e0b;
+            --gray-600: #4b5563;
+            --gray-300: #d1d5db;
+        }
+        
+        .text-main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--edu-blue-900);
+        }
+        
+        .text-section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--edu-blue-900);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--edu-blue-500) 0%, var(--edu-blue-900) 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+        
+        .info-card {
+            transition: all 0.3s ease;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        @media (max-width: 640px) {
+            .text-main-title { font-size: 1.875rem; }
+            .grid-responsive { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 导航栏 -->
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="../index.html" class="text-xl font-bold mr-4">查分数</a>
+                    <span class="text-sm">/ {{PROVINCE_NAME}}查分</span>
+                </div>
+                <div class="text-sm">2025年高考查分</div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 面包屑导航 -->
+    <div class="bg-white border-b">
+        <div class="container mx-auto px-4 py-3">
+            <nav class="text-sm text-gray-600">
+                <a href="../index.html" class="hover:text-blue-600">首页</a>
+                <span class="mx-2">></span>
+                <span class="text-gray-400">{{PROVINCE_NAME}}查分</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 页头信息 -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <div class="text-center mb-6">
+                <h1 class="text-main-title mb-4">
+                    {{PROVINCE_NAME}}2025年高考查分入口
+                </h1>
+                <p class="text-gray-600 text-lg">
+                    {{EXAM_BOARD}}官方查分通道
+                </p>
+            </div>
+            
+            <!-- 关键信息卡片 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="info-card bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-blue-900 mb-2">{{QUERY_DATE_FORMATTED}}</div>
+                    <div class="text-blue-700 font-medium">查分时间</div>
+                    <div class="text-sm text-blue-600 mt-1">{{QUERY_TIME}}</div>
+                </div>
+                <div class="info-card bg-green-50 border border-green-200 rounded-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-green-900 mb-2">{{STATUS_TEXT}}</div>
+                    <div class="text-green-700 font-medium">查分状态</div>
+                    <div class="text-sm text-green-600 mt-1">官方权威</div>
+                </div>
+                <div class="info-card bg-amber-50 border border-amber-200 rounded-lg p-6 text-center">
+                    <div class="text-3xl font-bold text-amber-900 mb-2">{{REGION}}</div>
+                    <div class="text-amber-700 font-medium">所属地区</div>
+                    <div class="text-sm text-amber-600 mt-1">中国{{REGION}}</div>
+                </div>
+            </div>
+            
+            <!-- 查分按钮 -->
+            <div class="text-center">
+                <a href="{{QUERY_URL}}" 
+                   target="_blank" 
+                   class="btn-primary inline-block text-white px-8 py-4 rounded-lg text-lg font-medium mr-4 mb-4">
+                    🔗 进入官方查分页面
+                </a>
+                <a href="tel:{{PHONE}}" 
+                   class="inline-block bg-gray-100 text-gray-700 px-6 py-4 rounded-lg text-lg font-medium hover:bg-gray-200 transition-colors mb-4">
+                    📞 咨询电话
+                </a>
+            </div>
+        </section>
+
+        <!-- 查分方式详情 -->
+        <section class="bg-white rounded-lg shadow-lg p-8 mb-8">
+            <h2 class="text-section-title mb-6">{{PROVINCE_NAME}}查分方式</h2>
+            
+            <div class="prose max-w-none">
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+                    <h4 class="text-lg font-semibold text-blue-900 mb-3">官方查分渠道</h4>
+                    <p class="text-blue-800 leading-relaxed">{{DESCRIPTION}}</p>
+                </div>
+                
+                <!-- 查分步骤 -->
+                <div class="mb-8">
+                    <h4 class="text-lg font-semibold text-gray-900 mb-4">🔍 查分步骤</h4>
+                    <ol class="list-decimal list-inside space-y-3 text-gray-700">
+                        <li>准备好<strong>准考证号</strong>和<strong>身份证号</strong></li>
+                        <li>访问{{EXAM_BOARD}}官方网站：<a href="{{QUERY_URL}}" target="_blank" class="text-blue-600 hover:underline">{{QUERY_URL}}</a></li>
+                        <li>点击"高考成绩查询"或相关入口</li>
+                        <li>输入准考证号、身份证号等信息</li>
+                        <li>点击查询按钮获取成绩</li>
+                    </ol>
+                </div>
+
+                <!-- 注意事项 -->
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-6">
+                    <h4 class="text-lg font-semibold text-amber-800 mb-3">⚠️ 重要提醒</h4>
+                    <ul class="space-y-2 text-amber-700">
+                        <li>• 查分开放时间：{{QUERY_DATE_FORMATTED}} {{QUERY_TIME}}</li>
+                        <li>• 查分高峰期可能出现网络拥塞，请耐心等待</li>
+                        <li>• 请通过官方指定渠道查询，谨防虚假网站</li>
+                        <li>• 如有疑问可致电{{EXAM_BOARD}}：{{PHONE}}</li>
+                        <li>• 成绩有疑问可按规定申请复核</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 相关信息 -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- 考试院信息 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">📋 考试院信息</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center">
+                        <span class="text-gray-600 w-20">机构：</span>
+                        <span class="font-medium">{{EXAM_BOARD}}</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gray-600 w-20">电话：</span>
+                        <a href="tel:{{PHONE}}" class="text-blue-600 hover:underline">{{PHONE}}</a>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gray-600 w-20">官网：</span>
+                        <a href="{{QUERY_URL}}" target="_blank" class="text-blue-600 hover:underline break-all">{{QUERY_URL}}</a>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="text-gray-600 w-20">更新：</span>
+                        <span class="text-sm text-gray-500">{{LAST_UPDATE}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 其他省份快速导航 -->
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-semibold text-blue-900 mb-4">🗺️ 其他省份</h3>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <!-- 这里会通过JavaScript动态填充同地区的其他省份 -->
+                    <div id="related-provinces">
+                        正在加载...
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 返回首页 -->
+        <div class="text-center">
+            <a href="../index.html" 
+               class="inline-block bg-gray-100 text-gray-700 px-6 py-3 rounded-lg hover:bg-gray-200 transition-colors">
+                ← 返回全国查分首页
+            </a>
+        </div>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-2">查分数 - {{PROVINCE_NAME}}高考查分网站</p>
+            <p class="text-sm text-gray-400">数据来源：{{EXAM_BOARD}}官方发布 | 仅供参考，请以官方最新公告为准</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/data.js"></script>
+    <script>
+        // 获取当前省份信息
+        const currentProvinceId = '{{PROVINCE_ID}}';
+        const currentProvince = provincesData.find(p => p.id === currentProvinceId);
+        
+        // 填充同地区其他省份
+        function loadRelatedProvinces() {
+            const relatedContainer = document.getElementById('related-provinces');
+            if (!relatedContainer || !currentProvince) return;
+            
+            const sameRegionProvinces = provincesData.filter(p => 
+                p.region === currentProvince.region && p.id !== currentProvinceId
+            );
+            
+            const html = sameRegionProvinces.map(province => `
+                <a href="${province.id}.html" 
+                   class="block px-3 py-2 bg-gray-50 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">
+                    ${province.name}
+                </a>
+            `).join('');
+            
+            relatedContainer.innerHTML = html || '<div class="text-gray-500 text-center col-span-2">暂无其他省份</div>';
+        }
+        
+        // 页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', loadRelatedProvinces);
+    </script>
+</body>
+</html> 

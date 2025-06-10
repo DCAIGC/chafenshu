@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# 站点地图位置
+Sitemap: https://chafenshu.com/sitemap.xml
+
+# 爬取频率限制
+Crawl-delay: 1
+
+# 优先爬取的重要页面
+Allow: /provinces/
+Allow: /index.html
+
+# 避免爬取的文件类型
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /assets/
+
+# 特殊搜索引擎优化
+User-agent: Baiduspider
+Crawl-delay: 0.5
+Allow: /
+
+User-agent: Googlebot
+Crawl-delay: 0.5
+Allow: / 

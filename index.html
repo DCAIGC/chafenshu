@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年全国高考查分入口-查分数网</title>
+    <meta name="description" content="2025年全国高考成绩查询统一入口，提供34个省市自治区官方查分链接，查分时间6月23-25日，快速准确查询高考分数。">
+    <meta name="keywords" content="2025高考查分,高考成绩查询,高考分数线,全国高考查分入口,高考成绩,查分时间,教育考试院">
+    
+    <!-- SEO增强元数据 -->
+    <meta name="author" content="查分数网">
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="baiduspider" content="index,follow">
+    
+    <!-- Open Graph 社交媒体优化 -->
+    <meta property="og:title" content="2025年全国高考查分入口-查分数网">
+    <meta property="og:description" content="2025年全国高考成绩查询统一入口，提供34个省市自治区官方查分链接，查分时间6月23-25日，快速准确查询高考分数。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chafenshu.com/">
+    <meta property="og:site_name" content="查分数网">
+    <meta property="og:locale" content="zh_CN">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2025年全国高考查分入口-查分数网">
+    <meta name="twitter:description" content="2025年全国高考成绩查询统一入口，提供34个省市自治区官方查分链接">
+    
+    <!-- 移动端优化 -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- 结构化数据 - JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "查分数网-2025年全国高考查分网站",
+      "alternateName": "高考查分网",
+      "url": "https://chafenshu.com",
+      "description": "2025年全国高考成绩查询统一入口，提供34个省市自治区官方查分链接，查分时间6月23-25日",
+      "inLanguage": "zh-CN",
+      "author": {
+        "@type": "Organization",
+        "name": "查分数网"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://chafenshu.com/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "mainEntity": {
+        "@type": "Service",
+        "name": "高考查分服务",
+        "description": "为全国高考考生提供便捷的官方查分入口导航服务",
+        "provider": {
+          "@type": "Organization",
+          "name": "查分数网"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "中国"
+        },
+        "serviceType": "教育信息服务"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "首页",
+        "item": "https://chafenshu.com/"
+      }]
+    }
+    </script>
+    
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+    
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- 自定义CSS变量 -->
+    <style>
+        :root {
+            --edu-blue-900: #1e40af;
+            --edu-blue-500: #3b82f6;
+            --edu-blue-100: #dbeafe;
+            --gray-50: #f8fafc;
+            --red-500: #ef4444;
+            --green-500: #10b981;
+            --amber-500: #f59e0b;
+            --gray-600: #4b5563;
+            --gray-300: #d1d5db;
+        }
+        
+        .text-main-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--edu-blue-900);
+        }
+        
+        .text-section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--edu-blue-900);
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--edu-blue-500) 0%, var(--edu-blue-900) 100%);
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+        
+        .province-card {
+            transition: all 0.3s ease;
+        }
+        
+        .province-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .status-open { color: var(--green-500); }
+        .status-soon { color: var(--amber-500); }
+        .status-closed { color: var(--gray-600); }
+        
+        .calendar-day {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .calendar-day:hover {
+            background-color: var(--edu-blue-100);
+        }
+        
+        .calendar-day.active {
+            background-color: var(--edu-blue-500);
+            color: white;
+        }
+        
+        @media (max-width: 640px) {
+            .text-main-title { font-size: 1.875rem; }
+            .provinces-grid { grid-template-columns: 1fr; }
+            .calendar-widget { overflow-x: auto; }
+            .search-input { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- 导航栏 -->
+    <header class="bg-blue-900 text-white sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <h1 class="text-xl font-bold">查分数</h1>
+                <div class="flex items-center space-x-4">
+                    <a href="guide.html" class="text-sm hover:text-blue-200 transition-colors">查分指南</a>
+                    <div class="text-sm">2025年高考查分</div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 主要内容 -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- 标题区域 -->
+        <section class="text-center mb-12" role="banner">
+            <header>
+                <h1 class="text-main-title mb-4" itemprop="name">
+                    2025年全国高考查分入口
+                </h1>
+                <p class="text-gray-600 text-lg mb-8" itemprop="description">
+                    快速找到您所在省市的官方查分通道，查分时间：6月23-25日
+                </p>
+            </header>
+            
+            <!-- 搜索框 -->
+            <div class="max-w-md mx-auto mb-8" role="search">
+                <label for="searchInput" class="sr-only">搜索省份</label>
+                <div class="relative">
+                    <input type="text" 
+                           id="searchInput" 
+                           name="searchInput"
+                           autocomplete="off"
+                           aria-label="搜索省份查分入口"
+                           placeholder="输入省份名称，如：北京、京..." 
+                           class="w-full px-4 py-3 border-2 border-blue-200 rounded-lg focus:border-blue-500 focus:outline-none search-input">
+                    <div class="absolute right-3 top-3 text-blue-500" aria-hidden="true">🔍</div>
+                </div>
+                <div id="searchResults" 
+                     class="hidden mt-2 bg-white border border-gray-200 rounded-lg shadow-lg"
+                     role="listbox"
+                     aria-label="搜索结果"></div>
+            </div>
+            
+            <!-- 快速统计信息 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+                <div class="bg-white rounded-lg p-4 shadow">
+                    <div class="text-2xl font-bold text-blue-900">34</div>
+                    <div class="text-sm text-gray-600">省市自治区</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow">
+                    <div class="text-2xl font-bold text-green-500">6月23-25日</div>
+                    <div class="text-sm text-gray-600">查分时间</div>
+                </div>
+                <div class="bg-white rounded-lg p-4 shadow">
+                    <div class="text-2xl font-bold text-amber-500">官方权威</div>
+                    <div class="text-sm text-gray-600">查分渠道</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 查分日历 -->
+        <section class="mb-12">
+            <h2 class="text-section-title text-center mb-6">查分日历</h2>
+            <div id="calendar-widget" class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <div class="calendar-day bg-blue-50 p-4 rounded-lg" data-date="2025-06-23">
+                        <div class="text-2xl font-bold text-blue-900">23</div>
+                        <div class="text-sm text-gray-600 mb-2">6月23日</div>
+                        <div class="text-xs text-blue-600">多省开放</div>
+                    </div>
+                    <div class="calendar-day bg-blue-50 p-4 rounded-lg" data-date="2025-06-24">
+                        <div class="text-2xl font-bold text-blue-900">24</div>
+                        <div class="text-sm text-gray-600 mb-2">6月24日</div>
+                        <div class="text-xs text-blue-600">集中查分</div>
+                    </div>
+                    <div class="calendar-day bg-blue-50 p-4 rounded-lg" data-date="2025-06-25">
+                        <div class="text-2xl font-bold text-blue-900">25</div>
+                        <div class="text-sm text-gray-600 mb-2">6月25日</div>
+                        <div class="text-xs text-blue-600">大部分省份</div>
+                    </div>
+                </div>
+                <div id="calendar-details" class="mt-6 p-4 bg-gray-50 rounded-lg hidden">
+                    <!-- 日历详情将通过JavaScript动态填充 -->
+                </div>
+            </div>
+        </section>
+
+        <!-- 省市导航 -->
+        <section class="mb-12">
+            <h2 class="text-section-title text-center mb-8">各省市查分入口</h2>
+            
+            <!-- 地区分类导航 -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8">
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="all">
+                    全部地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="华北">
+                    华北地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="华东">
+                    华东地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="华南">
+                    华南地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="华中">
+                    华中地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="西南">
+                    西南地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="西北">
+                    西北地区
+                </button>
+                <button class="region-filter px-4 py-2 bg-white border border-gray-300 rounded-lg hover:bg-blue-50 hover:border-blue-300 transition-colors" data-region="东北">
+                    东北地区
+                </button>
+            </div>
+            
+            <!-- 省份网格 -->
+            <div id="provinces-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 省份卡片将通过JavaScript动态生成 -->
+            </div>
+        </section>
+
+        <!-- 重要提示 -->
+        <section class="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-8">
+            <h3 class="text-lg font-semibold text-amber-800 mb-3">📢 重要提示</h3>
+            <ul class="space-y-2 text-amber-700">
+                <li>• 请通过官方指定渠道查询成绩，谨防虚假网站和诈骗信息</li>
+                <li>• 查分高峰期可能出现网络拥堵，建议错峰查询</li>
+                <li>• 准备好准考证号、身份证号等必要信息</li>
+                <li>• 如对成绩有疑问，可按各省规定申请成绩复核</li>
+            </ul>
+            <div class="mt-4 pt-4 border-t border-amber-200">
+                <a href="guide.html" class="inline-flex items-center px-4 py-2 bg-amber-600 text-white rounded-lg hover:bg-amber-700 transition-colors">
+                    📖 查看详细查分指南
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-6">
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">快速导航</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/" class="hover:text-white transition-colors">首页</a></li>
+                        <li><a href="guide.html" class="hover:text-white transition-colors">查分指南</a></li>
+                        <li><a href="sitemap.xml" class="hover:text-white transition-colors">网站地图</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">地区导航</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="provinces/beijing.html" class="hover:text-white transition-colors">北京查分</a></li>
+                        <li><a href="provinces/shanghai.html" class="hover:text-white transition-colors">上海查分</a></li>
+                        <li><a href="provinces/guangdong.html" class="hover:text-white transition-colors">广东查分</a></li>
+                        <li><a href="provinces/jiangsu.html" class="hover:text-white transition-colors">江苏查分</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-3">友情提醒</h3>
+                    <p class="text-gray-300 text-sm">
+                        请通过官方渠道查询成绩，避免上当受骗。如有疑问，请咨询所在省份教育考试院。
+                    </p>
+                </div>
+            </div>
+            <div class="text-center border-t border-gray-700 pt-6">
+                <p class="mb-2">查分数 - 2025年全国高考查分网站</p>
+                <p class="text-sm text-gray-400">数据来源：各省市教育考试院官方发布 | 仅供参考，请以官方最新公告为准</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/search.js"></script>
+    <script src="assets/js/calendar.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html> 
