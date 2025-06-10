@@ -318,6 +318,10 @@ def get_province_template():
             <p class="text-sm text-gray-400">数据来源：{examBoard}官方发布 | 仅供参考，请以官方最新公告为准</p>
         </div>
     </footer>
+
+    <!-- 百度统计 -->
+    <script src="../assets/js/statistics.js"></script>
+    
 </body>
 </html>'''
 
